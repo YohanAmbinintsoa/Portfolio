@@ -1,10 +1,17 @@
+FROM maven:3.8.4-openjdk-17 AS build
+
+WORKDIR /app
+
 FROM openjdk:17-oracle
 
 # Set the working directory inside the container
-WORKDIR /app
+COPY . .
+
+# Build the Spring Boot application using Maven
+RUN mvn clean package
 
 # Copy the compiled Spring Boot JAR file into the container
-COPY target/portfolio-0.0.1-SNAPSHOT.war /app/app.jar
+COPY --from=build /app/target/your-application.jar /app/your-application.jar
 
 # Expose the port your Spring Boot app is running on
 EXPOSE 8080
