@@ -17,4 +17,4 @@ COPY --from=build /app/target/portfolio.war /app/portfolio.war
 EXPOSE 8080
 
 # Command to run the Spring Boot application when the container starts
-CMD ["java", "-jar", "/portfolio.war"]
+CMD ["java", "-jar", "/app/portfolio.war"]
