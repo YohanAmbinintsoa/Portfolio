@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bienvenue sur mon portfolio!</title>
+
+	<link rel="stylesheet" th:href="@{/css/main.css}">
+	<link rel="stylesheet" th:href="@{/css/loader.css}">
+	<link rel="stylesheet" th:href="@{/css/animate.min.css}">
+	<link rel="stylesheet" th:href="@{/css/all.min.css}">
+	<link rel="stylesheet" th:href="@{/css/aos.css}">
+
+	<link rel="shortcut icon" th:href="@{/img/logo.svg}" type="image/x-icon">
+</head>
+
+<body onload="loading()">
+	<section id="loader" class="loader">
+		<div class="content">
+			<div class="cube"></div>
+			<div class="cube"></div>
+			<div class="cube"></div>
+			<div class="cube"></div>
+			<div class="cube"></div>
+		</div>
+	</section>
+	<div id="container" class="container">
+		<!--Start header section-->
+		<header class="head">
+			<a href="/"><img class="logo" th:src="@{/img/logo.svg}" alt=""></a>
+			<ul class="center-menu">
+				<li class="link"><a class="active" href="#accueil">Accueil</a></li>
+				<li class="link"><a href="#apropos">A propos</a></li>
+				<li class="link"><a href="#contact">Contact</a></li>
+				<li class="link"><a href="#projet">Projets</a></li>
+			</ul>
+			<button onclick="scrollToSection('#contact')" class="contact">Me contacter</button>
+			<i id="open" class="menu-open fa-solid fa-bars"></i>
+			<i id="close" class="menu-close fa-solid fa-xmark"></i>
+		</header>
+		<!--End Header section-->
+
+		<!--Start Banner section-->
+		<section id="accueil" class="banner">
+			<div class="me">
+				<div class="presentation">
+					<h1 class="animate__animated animate__zoomIn" style="transition: 0.3s;">Bonjour, je suis</h1>
+					<h1 class="nom animate__animated animate__fadeInUp ">Yohan RABEARIVELOARISOA</h1>
+				</div>
+				<h1 class="carriere animate__animated animate__fadeInRight">Developpeur d'applications.</h1>
+				<div class="intro animate__animated animate__fadeInUp">
+					<p>Je suis un développeur web fullstack passionné, capable de donner vie à des idées et de créer des
+						expériences numériques complètes.
+						Ma polyvalence me permet de concevoir aussi bien l'interface utilisateur que les fonctionnalités
+						côté serveur,
+						tout en m'efforçant de produire des solutions web innovantes et élégantes.</p>
+				</div>
+				<button id="cv" class="cv">Voir mon CV
+					<span></span><span></span><span></span><span></span>
+				</button>
+			</div>
+			<div class="social">
+				<ul class="social-media">
+					<li class="social-icon animate__animated"><a href="https://www.facebook.com/yohan.rabe.3/"
+							target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+					<li class="social-icon animate__animated"><a href="https://www.instagram.com/yohan_rabe/"
+							target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+					<li class="social-icon animate__animated"><a
+							href="https://github.com/YohanAmbinintsoa?tab=repositories" target="_blank"><i
+								class="fa-brands fa-github"></i></a></li>
+					<li class="social-icon animate__animated"><a
+							href="https://www.linkedin.com/in/yohan-rabeariveloarisoa-479629288/" target="_blank"><i
+								class="fa-brands fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- End Banner Section -->
+
+		<!-- Start About section -->
+		<section id="apropos" class="about">
+			<div class="big">
+				<div class="left">
+					<div class="nb" data-aos="fade-down" data-aos-anchor-placement="center-bottom"
+						data-aos-easing="linear">
+					</div>
+					<div class="color" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+						data-aos-easing="linear" data-aos-duration="500  ">
+					</div>
+				</div>
+				<div class="social">
+					<ul class="social-media">
+						<li class="social-icon animate__animated"><a href="https://www.facebook.com/yohan.rabe.3/"
+								target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+						<li class="social-icon animate__animated"><a href="https://www.instagram.com/yohan_rabe/"
+								target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+						<li class="social-icon animate__animated"><a
+								href="https://github.com/YohanAmbinintsoa?tab=repositories" target="_blank"><i
+									class="fa-brands fa-github"></i></a></li>
+						<li class="social-icon animate__animated"><a
+								href="https://www.linkedin.com/in/yohan-rabeariveloarisoa-479629288/" target="_blank"><i
+									class="fa-brands fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<h1 data-aos="fade-right" data-aos-duration="1000" class="who" data-aos-anchor-placement="top-center">
+						Qui suis-je?
+					</h1>
+						<div data-aos="fade-up" data-aos-anchor-placement="top-center" class="about-text" data-aos-duration="1000" >
+							<p>  &nbsp;&nbsp;&nbsp;Je m'appelle RABEARIVELOARISOA Ambinintsoa Yohan, un étudiant passionné en informatique,
+								 actuellement en 3ème année à l'IT University Andoharanofotsy à Madagascar. 
+								 Ma spécialité ? Le développement web fullstack. 
+								 Diplômé du baccalauréat série C avec mention assez bien, 
+								 je suis animé par une passion inébranlable pour l'univers du code.
+								 <br>
+								 <br>
+								 &nbsp;&nbsp;&nbsp;Polyglotte en langages et en culture, je parle couramment l'anglais, le français et le malgache. 
+								 Chacune de ces langues est une fenêtre ouverte vers de nouvelles opportunités et de nouveaux 
+								 horizons dans le monde numérique en constante évolution.
+								 <br>
+								 <br>
+								 &nbsp;&nbsp;&nbsp;Au fil de mon parcours académique, j'ai acquis une solide expertise dans le développement web fullstack, 
+								 alliant front-end et back-end pour créer des expériences utilisateur immersives et fonctionnelles. 
+								 Mon ambition est de concevoir des applications et des sites web qui transcendent les attentes et 
+								 enrichissent la vie de leurs utilisateurs.
+								 <br>
+								 <br>
+								 &nbsp;&nbsp;&nbsp;Je crois fermement en l'apprentissage continu et je suis toujours à l'affût des dernières technologies 
+								 et tendances. Mon objectif est de contribuer de manière significative à l'industrie du web, 
+								 en apportant des idées innovantes et une approche créative à chaque projet.
+								 <br>
+								 <br>
+								 &nbsp;&nbsp;&nbsp;Explorez mon portfolio et découvrez l'histoire que j'écris en code, une ligne à la fois.
+								</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About section -->
+
+		<!--Start contact section-->
+		<section id="contact" class="contact-section">
+			<div class="big-contact">
+				<div class="left-contact">
+					<div class="left-up-content">
+						<h1 class="left-title">Prêt à transformer vos idées en réalité? Contactez-moi dès aujourd'hui!</h1>
+						<p class="left-subtitle">Pour toute collaboration, n'hésitez pas à me contacter. Je répondrai dans les prochaines 24h.</p>
+						<hr class="hr">
+					</div>
+					<div class="contact-form">
+						<form action="" method="post" class="form">
+							<div class="email">
+								<label for="">Adresse mail</label>
+								<input class="mail-input" type="email" name="email" id="" placeholder="VotreEmail@gmail.com">
+							</div>
+							<div class="mail-message">
+								<label for="">Message</label>
+								<textarea class="message" name="message" id="" cols="30" rows="15" placeholder="Votre message"></textarea>
+							</div> 
+							<div class="submit">
+								<input class="submit-btn" type="submit" value="Envoyer le message">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="right-contact">
+					<div class="up-right">
+						<img class="mail-image" th:src="@{/img/mail.png}" alt="">
+					</div>
+					<div class="bottom-right">
+						<div class="bottom-content">
+							<div class="round"><i class="right-icon fa-regular fa-envelope fa-fw"></i></div>
+							<div class="bottom-text">
+								<label for="">Email</label>
+								<p>yohanrabepro@gmail.com</p>
+							</div>
+						</div>
+						<div class="bottom-content">
+							<div class="round"><i class="right-icon fa-solid fa-phone fa-fw"></i></div>
+							<div class="bottom-text">
+								<label for="">Telephone</label>
+								<p>0344669569</p>
+							</div>
+						</div>
+						<div class="bottom-content">
+							<div class="round"><i class="right-icon fa-solid fa-location-dot fa-fw"></i></div>
+							<div class="bottom-text">
+								<label for="">Adresse</label>
+								<p>Antananarivo, Madagascar</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script th:src="@{/js/main.js}"></script>
+	<script th:src="@{/js/aos.js}"></script>
+	<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
+	<script>
+		function loading() { 
+			myVar = setTimeout(showPage, 2000);
+		}
+
+		function showPage() {
+			var loader = this.document.getElementById("loader");
+			loader.style.display = "none";
+			var container = this.document.getElementById("container");
+			container.style.display = "block";
+			AOS.init({
+				disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+				startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+				initClassName: 'aos-init', // class applied after initialization
+				animatedClassName: 'aos-animate', // class applied on animation
+				useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+				disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+				debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+				throttleDelay: 99,
+			});
+
+		}
+		const lenis = new Lenis({
+			smoothWheel:true,
+			smoothTouch: true
+		})
+		function raf(time) {
+			lenis.raf(time)
+			requestAnimationFrame(raf)
+		}
+		requestAnimationFrame(raf)
+	</script>
+</body>
+
+</html>
