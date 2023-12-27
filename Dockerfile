@@ -8,7 +8,7 @@ FROM openjdk:17-oracle
 COPY . .
 
 # Build the Spring Boot application using Maven
-RUN --from=build mvn clean package
+RUN ./mvnw clean package
 
 # Copy the compiled Spring Boot JAR file into the container
 COPY --from=build /app/target/your-application.jar /app/your-application.jar
