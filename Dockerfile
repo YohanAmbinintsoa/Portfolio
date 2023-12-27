@@ -11,10 +11,10 @@ RUN mvn clean package
 FROM openjdk:17-oracle
 
 # Copy the compiled Spring Boot JAR file into the container
-COPY --from=build /app/target/portfolio.jar /app/portfolio.jar
+COPY --from=build /app/target/portfolio.war /app/portfolio.war
 
 # Expose the port your Spring Boot app is running on
 EXPOSE 8080
 
 # Command to run the Spring Boot application when the container starts
-CMD ["java", "-jar", "portfolio.jar"]
+CMD ["java", "-jar", "portfolio.war"]
